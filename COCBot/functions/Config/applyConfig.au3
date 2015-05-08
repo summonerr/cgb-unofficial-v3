@@ -551,6 +551,17 @@ Func applyConfig() ;Applies the data from config to the controls in GUI
 	GUICtrlSetData($txtFullTroop, $fulltroop)
 	;barracks boost not saved (no use)
 
+; laboratory settings
+;Lab
+		If $ichkLab = 1 Then
+		GUICtrlSetState($chkLab, $GUI_CHECKED)
+	Else
+		GUICtrlSetState($chkLab, $GUI_UNCHECKED)
+	EndIf
+	_GUICtrlComboBox_SetCurSel($cmbLaboratory, $icmbLaboratory)
+	GUICtrlSetData($txtLabX, $itxtLabX)
+	GUICtrlSetData($txtLabY, $itxtLabY)
+	
 	;Other Settings--------------------------------------------------------------------------
 	_GUICtrlComboBox_SetCurSel($cmbWalls, $icmbWalls)
 	Switch $iUseStorage
