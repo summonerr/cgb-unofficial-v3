@@ -338,3 +338,32 @@ Global $DESTOLoc = ""
 
 Global $dropAllOnSide=1
 Global $checkHeroesByHealth = False
+
+;UpTroops
+Global $LabPos[2]
+Global $ichkLab
+Global $icmbLaboratory
+Global $itxtLabX
+Global $itxtLabY
+Global $UpBar2X = 175
+Global $UpBar2Y = 379
+Global $UpArchX = 180
+Global $UpArchY = 468
+Global $GiantsX = 307
+Global $GiantsY = 361
+Global $WBreakerX = 373
+Global $WBreakerY = 373
+Global $WizardX = 489
+Global $WizardY = 323
+Global $UpHealX = 515
+Global $UpHealY = 431
+Global $UpDragonX = 591
+Global $UpDragonY = 388
+Global $UpPekkaX = 612
+Global $UpPekkaY = 479
+Global $SpellHealX = 527
+Global $SpellHealY = 381
+Global $SpellLightningX = 549
+Global $SpellLightningY = 461
+Global $SpellRageX = 650
+Global $SpellRageY = 372
