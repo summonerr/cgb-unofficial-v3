@@ -513,6 +513,17 @@ Func saveConfig() ;Saves the controls settings to the config
 
 	IniWrite($config, "troop", "fulltroop", GUICtrlRead($txtFullTroop))
 	;barracks boost not saved (no use)
+	
+	;========================== laboratory sett===========================
+If GUICtrlRead($chkLab) = $GUI_CHECKED Then
+		IniWrite($config, "upgrade", "auto-uptroops", 1)
+	Else
+		IniWrite($config, "upgrade", "auto-uptroops", 0)
+	EndIf
+	IniWrite($config, "upgrade", "troops-name", _GUICtrlComboBox_GetCurSel($cmbLaboratory))
+    IniWrite($config, "upgrade", "LabPosX", GUICtrlRead($txtLabX))
+	IniWrite($config, "upgrade", "LabPosY", GUICtrlRead($txtLabY))
+	;end======================================
 
 	;Misc Settings--------------------------------------------------------------------------
 	If GUICtrlRead($chkWalls) = $GUI_CHECKED Then
