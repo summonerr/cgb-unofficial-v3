@@ -22,7 +22,7 @@
 #pragma compile(ProductVersion, 3.0)
 
 #pragma compile(FileVersion, 3.0.4)
-#pragma compile(LegalCopyright, © http://gamebot.org)
+#pragma compile(LegalCopyright, Â© http://gamebot.org)
 
 $sBotVersion = "v3.0.4"
 
@@ -122,7 +122,11 @@ Func runBot() ;Bot that runs everything in order
 				If $Restart = True Then ContinueLoop
 			UpgradeWall()
 				If _Sleep(1000) Then Return
-
+			
+				If $Restart = True Then ContinueLoop
+			Laboratory()
+			    If _Sleep(1000) Then Return
+			    
 				If $Restart = True Then ContinueLoop
 			UpgradeBuilding()
 				If _Sleep(1000) Then Return
