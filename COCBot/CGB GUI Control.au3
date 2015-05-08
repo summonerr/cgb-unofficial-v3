@@ -234,6 +234,16 @@ Func btnLocateBarracks()
 	$RunState = False
 EndFunc   ;==>btnLocateBarracks
 
+Func btnLab()
+   $RunState = True
+	While 1
+		ZoomOut()
+		LocateLab()
+		ExitLoop
+	WEnd
+	$RunState = False
+   EndFunc
+
 Func btnLocateArmyCamp()
 	$RunState = True
 	While 1
@@ -349,6 +359,119 @@ Func cmbTroopComp()
 		SetComboTroopComp()
 	EndIf
 EndFunc   ;==>cmbTroopComp
+
+Func btnTroopsBarbarians()
+	Select
+	Case $cmbLaboratory
+	   _GUICtrlComboBox_SetCurSel($cmbLaboratory,0)
+	   EndSelect
+EndFunc
+
+Func btnTroopsArchers()
+	Select
+	Case $cmbLaboratory
+	   _GUICtrlComboBox_SetCurSel($cmbLaboratory,1)
+	   EndSelect
+EndFunc
+
+Func btnTroopsGiants()
+	Select
+	Case $cmbLaboratory
+	   _GUICtrlComboBox_SetCurSel($cmbLaboratory,2)
+	   EndSelect
+EndFunc
+
+Func btnTroopsGoblins()
+	Select
+	Case $cmbLaboratory
+	   _GUICtrlComboBox_SetCurSel($cmbLaboratory,3)
+	   EndSelect
+EndFunc
+
+Func btnTroopsWallBreakers()
+	Select
+	Case $cmbLaboratory
+	   _GUICtrlComboBox_SetCurSel($cmbLaboratory,5)
+	   EndSelect
+EndFunc
+
+Func btnTroopsBalloons()
+	Select
+	Case $cmbLaboratory
+	   _GUICtrlComboBox_SetCurSel($cmbLaboratory,4)
+	   EndSelect
+EndFunc
+
+Func btnTroopsWizards()
+	Select
+	Case $cmbLaboratory
+	   _GUICtrlComboBox_SetCurSel($cmbLaboratory,6)
+	   EndSelect
+EndFunc
+
+Func btnTroopsHealers()
+	Select
+	Case $cmbLaboratory
+	   _GUICtrlComboBox_SetCurSel($cmbLaboratory,7)
+	   EndSelect
+EndFunc
+
+Func btnTroopsDragons()
+	Select
+	Case $cmbLaboratory
+	   _GUICtrlComboBox_SetCurSel($cmbLaboratory,8)
+	   EndSelect
+EndFunc
+
+Func btnTroopsMinions()
+	Select
+	Case $cmbLaboratory
+	   _GUICtrlComboBox_SetCurSel($cmbLaboratory,15)
+	   EndSelect
+EndFunc
+
+
+Func btnTroopsHogRiders()
+	Select
+	Case $cmbLaboratory
+	   _GUICtrlComboBox_SetCurSel($cmbLaboratory,16)
+	   EndSelect
+EndFunc
+
+Func btnTroopsValkyries()
+	Select
+	Case $cmbLaboratory
+	   _GUICtrlComboBox_SetCurSel($cmbLaboratory,17)
+	   EndSelect
+EndFunc
+
+Func btnTroopsGolems()
+	Select
+	Case $cmbLaboratory
+	   _GUICtrlComboBox_SetCurSel($cmbLaboratory,18)
+	   EndSelect
+EndFunc
+
+Func btnTroopsWitches()
+	Select
+	Case $cmbLaboratory
+	   _GUICtrlComboBox_SetCurSel($cmbLaboratory,19)
+	   EndSelect
+EndFunc
+
+Func btnTroopsLavaHounds()
+	Select
+	Case $cmbLaboratory
+	   _GUICtrlComboBox_SetCurSel($cmbLaboratory,20)
+	   EndSelect
+EndFunc
+
+Func btnTroopsPekkas()
+	Select
+	Case $cmbLaboratory
+	   _GUICtrlComboBox_SetCurSel($cmbLaboratory,9)
+	   EndSelect
+EndFunc
 
 Func SetComboTroopComp()
 	Switch _GUICtrlComboBox_GetCurSel($cmbTroopComp)
