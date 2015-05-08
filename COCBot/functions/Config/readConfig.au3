@@ -265,6 +265,12 @@ Func readConfig() ;Reads config and sets it to the variables
 		$fulltroop = IniRead($config, "troop", "fullTroop", "100")
 		;barracks boost not saved (no use)
 
+;Laboratory settings
+		$ichkLab = IniRead($config, "upgrade", "auto-uptroops", "0")
+		$icmbLaboratory = IniRead($config, "upgrade", "troops-name", "0")
+		$itxtLabX = IniRead($config, "upgrade", "LabPosX", "0")
+		$itxtLabY = IniRead($config, "upgrade", "LabPosY", "0")
+
 		;Misc Settings--------------------------------------------------------------------------
 
 		$ichkWalls = IniRead($config, "other", "auto-wall", "0")
