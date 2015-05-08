@@ -45,6 +45,7 @@
 #include "functions\Other\_PadStringCenter.au3"
 #include "functions\Other\_Sleep.au3"
 #include "functions\Other\Click.au3"
+#include "functions\Other\ClickDrag.au3"
 #include "functions\Other\CreateLogFile.au3"
 #include "functions\Other\FindPos.au3"
 #include "functions\Other\getBSPos.au3"
@@ -105,6 +106,7 @@
 #include "functions\Village\isBarrack.au3"
 #include "functions\Village\UpgradeBuilding.au3"
 #include "functions\Village\UpgradeWall.au3"
+#include "functions\Village\UpTroops.au3"
 #include "functions\Village\PushBullet.au3"
 
 #include "functions\Village\LocateSpell.au3"
